@@ -40,7 +40,10 @@ class MessagesController < ApplicationController
   # POST /messages
   # POST /messages.xml
   def create
-    @message = Message.new(params[:message])
+    @message = Message.new(:AccountSid => params[:AccountSid], :From => params[:From], :To => params[:To], :Body => params[:Body], 
+      :FromCity => params[:FromCity], :FromState => params[:FromState], :FromZip => params[:FromZip], :FromCountry => params[:FromCountry],
+      :ToCity => params[:ToCity], :ToState => params[:ToState], :ToZip => params[:ToZip], :ToCountry => params[:ToCountry])
+    #@message = Message.new(params[:message])
 
     respond_to do |format|
       if @message.save
