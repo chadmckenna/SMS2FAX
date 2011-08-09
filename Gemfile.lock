@@ -34,5 +34,5 @@ PLATFORMS
 
 DEPENDENCIES
   pamfaxr
-  rails (~> 2.3.11)
+  rails (~> 2.3.12)
   sqlite3-ruby
