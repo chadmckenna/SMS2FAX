@@ -47,6 +47,7 @@ class MessagesController < ApplicationController
 
     respond_to do |format|
       if @message.save
+        @message.send_fax
         format.html { redirect_to(@message, :notice => 'Message was successfully created.') }
         format.xml  { render :xml => @message, :status => :created, :location => @message }
       else
