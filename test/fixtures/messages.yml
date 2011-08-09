@@ -1,0 +1,31 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  SmsSid: MyText
+  AccountSid: MyText
+  From: MyText
+  To: MyText
+  Body: MyText
+  FromCity: MyText
+  FromState: MyText
+  FromZip: MyText
+  FromCountry: MyText
+  ToCity: MyText
+  ToState: MyText
+  ToZip: MyText
+  ToCountry: MyText
+
+two:
+  SmsSid: MyText
+  AccountSid: MyText
+  From: MyText
+  To: MyText
+  Body: MyText
+  FromCity: MyText
+  FromState: MyText
+  FromZip: MyText
+  FromCountry: MyText
+  ToCity: MyText
+  ToState: MyText
+  ToZip: MyText
+  ToCountry: MyText

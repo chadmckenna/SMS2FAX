@@ -1,0 +1,68 @@
+<p>
+  <b>Smssid:</b>
+  <%=h @message.SmsSid %>
+</p>
+
+<p>
+  <b>Accountsid:</b>
+  <%=h @message.AccountSid %>
+</p>
+
+<p>
+  <b>From:</b>
+  <%=h @message.From %>
+</p>
+
+<p>
+  <b>To:</b>
+  <%=h @message.To %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%=h @message.Body %>
+</p>
+
+<p>
+  <b>Fromcity:</b>
+  <%=h @message.FromCity %>
+</p>
+
+<p>
+  <b>Fromstate:</b>
+  <%=h @message.FromState %>
+</p>
+
+<p>
+  <b>Fromzip:</b>
+  <%=h @message.FromZip %>
+</p>
+
+<p>
+  <b>Fromcountry:</b>
+  <%=h @message.FromCountry %>
+</p>
+
+<p>
+  <b>Tocity:</b>
+  <%=h @message.ToCity %>
+</p>
+
+<p>
+  <b>Tostate:</b>
+  <%=h @message.ToState %>
+</p>
+
+<p>
+  <b>Tozip:</b>
+  <%=h @message.ToZip %>
+</p>
+
+<p>
+  <b>Tocountry:</b>
+  <%=h @message.ToCountry %>
+</p>
+
+
+<%= link_to 'Edit', edit_message_path(@message) %> |
+<%= link_to 'Back', messages_path %>
