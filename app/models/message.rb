@@ -1,7 +1,7 @@
 class Message < ActiveRecord::Base
 	def send_fax
-		pamfaxr = PamFaxr.new :username => ENV['PAMFAXR_USERNAME'], 
-		                      :password => ENV['PAMFAXR_SECRET']
+		pamfaxr = PamFaxr.new :username => ENV['PAMFAXR_USERNAME'].to_s, 
+		                      :password => ENV['PAMFAXR_SECRET'].to_s
 
 		@recipient = get_recipient
 		
