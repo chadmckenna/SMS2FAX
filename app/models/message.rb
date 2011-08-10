@@ -37,6 +37,7 @@ class Message < ActiveRecord::Base
 		  end
 		   
 		  # Send the fax
+		  # SANDBOX MODE
 		  #pamfaxr.send_fax
 	  end
 	end
