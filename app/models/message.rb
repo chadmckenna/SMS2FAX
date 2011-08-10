@@ -20,6 +20,7 @@ class Message < ActiveRecord::Base
 		  pamfaxr.set_cover(covers['Covers']['content'][1]['id'], self.Body)
 		  
 		  puts self.Body
+		  puts @recipient
 		   
 		  # Add files
 		  #pamfaxr.add_remote_file('https://s3.amazonaws.com/pamfax-test/Tropo.pdf')
