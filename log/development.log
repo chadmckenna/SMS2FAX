@@ -250,3 +250,96 @@ ActionController::RoutingError (No route matches "/message/" with {:method=>:get
   /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
 
 Rendering rescues/layout (not_found)
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2011-08-09 19:42:19) [GET]
+  [4;36;1mMessage Load (0.5ms)[0m   [0;1mSELECT * FROM "messages" [0m
+Rendering template within layouts/messages
+Rendering messages/index
+Completed in 18ms (View: 13, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MessagesController#new (for 127.0.0.1 at 2011-08-09 19:42:22) [GET]
+Rendering template within layouts/messages
+Rendering messages/new
+Completed in 111ms (View: 106, DB: 0) | 200 OK [http://localhost/messages/new]
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2011-08-09 19:42:26) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"oZh8LNdwBNadiRv0OsX4aMfEx3nkqIwm/hnGOcew2og=", "message"=>{"ToState"=>"", "FromState"=>"", "AccountSid"=>"", "Body"=>"", "FromCity"=>"", "From"=>"", "FromCountry"=>"", "FromZip"=>"", "To"=>"", "ToCity"=>"", "ToZip"=>"", "ToCountry"=>"", "SmsSid"=>""}}
+  [4;35;1mMessage Create (0.6ms)[0m   [0mINSERT INTO "messages" ("FromState", "ToState", "AccountSid", "created_at", "Body", "From", "FromCity", "updated_at", "To", "FromZip", "FromCountry", "ToCity", "ToZip", "ToCountry", "SmsSid") VALUES(NULL, NULL, NULL, '2011-08-10 01:42:26', NULL, NULL, NULL, '2011-08-10 01:42:26', NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+
+NoMethodError (undefined method `match' for nil:NilClass):
+  app/models/message.rb:40:in `get_recipient'
+  app/models/message.rb:8:in `send_fax'
+  app/controllers/messages_controller.rb:51:in `create'
+  app/controllers/messages_controller.rb:49:in `create'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (37.6ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2011-08-09 19:42:34) [GET]
+  [4;36;1mMessage Load (0.5ms)[0m   [0;1mSELECT * FROM "messages" [0m
+Rendering template within layouts/messages
+Rendering messages/index
+Completed in 11ms (View: 7, DB: 1) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#show (for 127.0.0.1 at 2011-08-09 19:42:37) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMessage Load (0.2ms)[0m   [0mSELECT * FROM "messages" WHERE ("messages"."id" = 1) [0m
+
+NoMethodError (undefined method `match' for nil:NilClass):
+  app/models/message.rb:40:in `get_recipient'
+  app/models/message.rb:8:in `send_fax'
+  app/controllers/messages_controller.rb:17:in `show'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (121.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MessagesController#show (for 127.0.0.1 at 2011-08-09 19:43:34) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMessage Load (0.3ms)[0m   [0;1mSELECT * FROM "messages" WHERE ("messages"."id" = 1) [0m
+
+NoMethodError (undefined method `match' for nil:NilClass):
+  app/models/message.rb:40:in `get_recipient'
+  app/models/message.rb:8:in `send_fax'
+  app/controllers/messages_controller.rb:17:in `show'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (120.2ms)
+Rendered rescues/_request_and_response (1.8ms)
+Rendering rescues/layout (internal_server_error)
