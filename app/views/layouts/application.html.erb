@@ -1,0 +1,24 @@
+<html>
+  <head>
+	<%= stylesheet_link_tag 'screen' %>
+	
+  </head>
+
+  <body>
+    <div class="header">
+	  <%= link_to "Faxzorz", home_path('index'), :id => "logo" %>
+	  <div class="nav">
+	    <%= link_to "home", home_path('index') %>
+	    <%= link_to "about", home_path('about') %>
+	    <%= link_to "contact", home_path('contact') %>
+	  </div>
+	</div>
+	<div class="clear"></div>
+	<div class="container">
+	  <%= yield %>
+	</div>
+	<div class="footer">
+		(<a href="http://chadmckenna.wordpress.com">A Chadwick Mattison McKenna Production</a>)
+	</div>
+  </body>
+</html>

@@ -343,3 +343,1593 @@ NoMethodError (undefined method `match' for nil:NilClass):
 Rendered rescues/_trace (120.2ms)
 Rendered rescues/_request_and_response (1.8ms)
 Rendering rescues/layout (internal_server_error)
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2011-08-12 22:44:42) [GET]
+  [4;36;1mMessage Load (0.9ms)[0m   [0;1mSELECT * FROM "messages" [0m
+Rendering template within layouts/messages
+Rendering messages/index
+Completed in 54ms (View: 49, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2011-08-12 22:56:09) [GET]
+
+LoadError (Expected /Users/cmckenna/Documents/SMS2FAX/app/controllers/home_controller.rb to define HomeController):
+  app/controllers/home_controller.rb:1
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (31.4ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 22:56:43) [GET]
+
+ActionController::UnknownAction (No action responded to show. Actions: index):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-08-12 23:00:08) [GET]
+Rendering home/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-08-12 23:04:55) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 87ms (View: 85, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-08-12 23:05:55) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-08-12 23:06:05) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-08-12 23:07:57) [GET]
+Rendering home/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-08-12 23:09:41) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:09:43) [GET]
+  Parameters: {"page"=>"about"}
+Rendering template within layouts/application
+Rendering home/about
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:10:12) [GET]
+  Parameters: {"page"=>"about"}
+Rendering template within layouts/application
+Rendering home/about
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:10:46) [GET]
+  Parameters: {"page"=>"about"}
+Rendering template within layouts/application
+Rendering home/about
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:10:47) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:10:52) [GET]
+  Parameters: {"page"=>"about"}
+Rendering template within layouts/application
+Rendering home/about
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:10:53) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:10:54) [GET]
+  Parameters: {"page"=>"about"}
+Rendering template within layouts/application
+Rendering home/about
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:11:06) [GET]
+  Parameters: {"page"=>"about"}
+Rendering template within layouts/application
+Rendering home/about
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:11:07) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:11:09) [GET]
+  Parameters: {"page"=>"about"}
+Rendering template within layouts/application
+Rendering home/about
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:13:07) [GET]
+  Parameters: {"page"=>"about"}
+Rendering template within layouts/application
+Rendering home/about
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:13:09) [GET]
+  Parameters: {"page"=>"contact"}
+Rendering template within layouts/application
+Rendering home/contact
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/contact]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:13:10) [GET]
+  Parameters: {"page"=>"about"}
+Rendering template within layouts/application
+Rendering home/about
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:13:11) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:14:36) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:14:37) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:15:22) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:15:41) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:15:58) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:16:18) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:16:27) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:16:40) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:16:55) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:17:20) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:17:35) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:17:54) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:18:09) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:18:26) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:18:35) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:18:44) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:19:28) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:20:05) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:20:27) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:21:07) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:21:19) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 86ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:21:35) [GET]
+  Parameters: {"page"=>"about"}
+Rendering template within layouts/application
+Rendering home/about
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:21:36) [GET]
+  Parameters: {"page"=>"contact"}
+Rendering template within layouts/application
+Rendering home/contact
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/contact]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:21:38) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:22:15) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:23:03) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:23:08) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:23:16) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:23:32) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:23:38) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:23:47) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:24:05) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:24:15) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:24:25) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:24:42) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:25:04) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:25:31) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:25:51) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:26:19) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:26:31) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:27:57) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:28:40) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:30:07) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:30:23) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:30:40) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:30:49) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:31:22) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:31:36) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:31:49) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:32:06) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:32:13) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:32:42) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:33:03) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:33:16) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:33:36) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:33:49) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:34:56) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:36:03) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:37:06) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 11ms (View: 10, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:37:17) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:37:22) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:37:38) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:38:03) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:38:09) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:38:19) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:38:36) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:38:48) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:39:07) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:39:34) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:39:50) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:40:10) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:40:17) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:40:26) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:40:44) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:41:13) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:41:28) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:42:29) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:42:40) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:42:58) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:43:06) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:44:03) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:44:36) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:44:48) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:45:30) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:46:34) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:47:23) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:47:57) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:50:08) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:50:25) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:51:24) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:51:46) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:53:01) [GET]
+  Parameters: {"page"=>"contact"}
+Rendering template within layouts/application
+Rendering home/contact
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/contact]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:53:02) [GET]
+  Parameters: {"page"=>"about"}
+Rendering template within layouts/application
+Rendering home/about
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:53:03) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:53:37) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:54:00) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:55:00) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:55:00) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 15ms (View: 6, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:55:08) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:55:35) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:56:25) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:56:57) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:58:20) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:58:30) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:58:41) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:58:52) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-12 23:59:06) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:00:44) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:00:50) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:00:56) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:01:03) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:01:10) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:01:17) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:01:24) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:01:39) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:02:15) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:02:21) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:03:02) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:03:19) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:04:11) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:04:24) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 86ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:04:58) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:05:35) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:05:57) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:06:08) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:06:36) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:07:05) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:07:16) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:08:14) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:08:33) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:08:49) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:09:04) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:09:36) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:10:00) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:10:17) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:10:37) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:10:45) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:10:50) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:10:57) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:11:12) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:12:15) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:12:22) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:16:37) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:17:18) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:17:19) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:18:09) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:18:26) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:19:12) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:19:21) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:19:25) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:19:30) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:19:54) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:20:11) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:21:47) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:22:12) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:26:08) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:26:26) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:26:46) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 87ms (View: 5, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:26:55) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:36:00) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:36:31) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:36:37) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:37:04) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:37:28) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:38:37) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:38:45) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:39:33) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 81ms (View: 79, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:40:16) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:44:50) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:45:45) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:45:56) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:47:38) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:47:56) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:48:06) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:48:16) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:49:07) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:49:56) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:50:05) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:50:35) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:50:52) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:51:28) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:51:37) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:51:51) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:51:57) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:54:38) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:56:18) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:56:47) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:57:51) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:58:16) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:58:34) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:58:52) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:59:07) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:59:28) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:59:48) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 00:59:56) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 01:00:23) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 01:00:33) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 01:01:20) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 01:01:39) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 01:01:53) [GET]
+  Parameters: {"page"=>"about"}
+Rendering template within layouts/application
+Rendering home/about
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 01:01:58) [GET]
+  Parameters: {"page"=>"contact"}
+Rendering template within layouts/application
+Rendering home/contact
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/contact]
+
+
+Processing HomeController#show (for 127.0.0.1 at 2011-08-13 01:02:00) [GET]
+  Parameters: {"page"=>"index"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/index]
