@@ -1,5 +1,3 @@
-require 'twilio-ruby'
-
 class Message < ActiveRecord::Base
 
 	def send_fax
