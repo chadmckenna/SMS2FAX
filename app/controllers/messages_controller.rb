@@ -40,20 +40,25 @@ class MessagesController < ApplicationController
   # POST /messages
   # POST /messages.xml
   def create
-    @message = Message.new(:AccountSid => params[:AccountSid], :From => params[:From], :To => params[:To], :Body => params[:Body], 
-      :FromCity => params[:FromCity], :FromState => params[:FromState], :FromZip => params[:FromZip], :FromCountry => params[:FromCountry],
-      :ToCity => params[:ToCity], :ToState => params[:ToState], :ToZip => params[:ToZip], :ToCountry => params[:ToCountry])
-    #@message = Message.new(params[:message])
-
-    respond_to do |format|
-      if @message.save
-        @message.send_fax
-        format.html { redirect_to(@message, :notice => 'Message was successfully created.') }
-        format.xml  { render :xml => @message, :status => :created, :location => @message }
-      else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @message.errors, :status => :unprocessable_entity }
+    if count_messages_by_sender <= 5
+      @message = Message.new(:AccountSid => params[:AccountSid], :From => params[:From], :To => params[:To], :Body => params[:Body], 
+        :FromCity => params[:FromCity], :FromState => params[:FromState], :FromZip => params[:FromZip], :FromCountry => params[:FromCountry],
+        :ToCity => params[:ToCity], :ToState => params[:ToState], :ToZip => params[:ToZip], :ToCountry => params[:ToCountry])
+      #@message = Message.new(params[:message])
+  
+      respond_to do |format|
+        if @message.save
+          @message.send_fax
+          format.html { redirect_to(@message, :notice => 'Message was successfully created.') }
+          format.xml  { render :xml => @message, :status => :created, :location => @message }
+        else
+          format.html { render :action => "new" }
+          format.xml  { render :xml => @message.errors, :status => :unprocessable_entity }
+        end
       end
+    else
+      # Code will go here to send SMS back to sender
+      send_over_use_message(params[:From])
     end
   end
 

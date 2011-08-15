@@ -27,11 +27,14 @@ a {
 	border-bottom: solid 5px #C9D7E6;
 	box-shadow: 0 0 4px 0px #000;
 }
+  .header .header-container {
+    margin: 0 auto 0 auto;
+    width: 50%;
+  }
   .header .nav {
     float: right;
     font-size: 1em;
     padding: .5em 0;
-    margin: 0 20px 0 0;
   }
     .header .nav a {
 	  padding: .5em;
@@ -43,7 +46,6 @@ a {
     }
   .header a#logo {
 	font-weight: 900;
-	margin: 0 0 0 20px;
     font-size: 2em;
     float: left;
     text-decoration: none;
