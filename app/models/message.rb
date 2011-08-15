@@ -47,7 +47,7 @@ class Message < ActiveRecord::Base
 	end
 
 	def get_messages_by_sender(from)
-    	messages = Message.find_by_from(from)
+    	messages = Message.find(:all, :conditions => { :From => from })
 	end
 
 	def count_messages_by_sender(from)
