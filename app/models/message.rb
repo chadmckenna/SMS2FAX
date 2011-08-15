@@ -46,7 +46,7 @@ class Message < ActiveRecord::Base
 		return self.Body.match(/((\+[0-9]{11}))/)
 	end
 
-	def get_messages_by_sender(from)
+	def self.get_messages_by_sender(from)
     	messages = Message.find(:all, :conditions => { :From => from })
 	end
 
@@ -54,11 +54,11 @@ class Message < ActiveRecord::Base
 		Message.get_messages_by_sender.count
 	end
 
-	def send_over_use_message(to)
+	def self.send_over_use_message(to)
 		Message.send_message('You have used all of your faxes on Faxzorz. Thanks for using the service.', to)
 	end
 
-	def send_message(message, to) 
+	def self.send_message(message, to) 
 		@account_sid	= ENV['TWILIO_ACCOUNT_SID'].to_s
 		@auth_token		= ENV['TWILIO_AUTH_TOKEN'].to_s
 
