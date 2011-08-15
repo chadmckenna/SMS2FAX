@@ -51,7 +51,7 @@ class Message < ActiveRecord::Base
 	end
 
 	def self.count_messages_by_sender(from)
-		Message.get_messages_by_sender.count
+		Message.get_messages_by_sender(from).count
 	end
 
 	def self.send_over_use_message(to)
