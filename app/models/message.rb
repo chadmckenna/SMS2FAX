@@ -44,7 +44,7 @@ class Message < ActiveRecord::Base
 
 	def get_recipient
 		return self.Body.match(/((\+[0-9]{11}))/)
-	endƒ
+	end
 
 	def get_messages_by_sender(from)
     	messages = Message.find_by_from(from)
