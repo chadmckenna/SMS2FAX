@@ -51,11 +51,11 @@ class Message < ActiveRecord::Base
 	end
 
 	def count_messages_by_sender(from)
-		get_messages_by_sender.count
+		Message.get_messages_by_sender.count
 	end
 
 	def send_over_use_message(to)
-		send_message('You have used all of your faxes on Faxzorz. Thanks for using the service.', to)
+		Message.send_message('You have used all of your faxes on Faxzorz. Thanks for using the service.', to)
 	end
 
 	def send_message(message, to) 
