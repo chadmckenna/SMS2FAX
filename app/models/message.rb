@@ -1,5 +1,6 @@
+require 'twilio-ruby'
+
 class Message < ActiveRecord::Base
-	require 'twilio-ruby'
 
 	def send_fax
 		pamfaxr = PamFaxr.new :username => ENV['PAMFAXR_USERNAME'].to_s, 
