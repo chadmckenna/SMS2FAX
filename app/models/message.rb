@@ -68,8 +68,6 @@ class Message < ActiveRecord::Base
 		@client = Twilio::REST::Client.new(@account_sid, @auth_token)
 
 		@account = @client.account
-		@message = @account.sms.messages.create({:from => '+14155992671', :to => to, :body => message})
-		puts @message
-		puts message
+		@message = @account.sms.messages.create({:from => '+17205499985', :to => to, :body => message})
 	end
 end

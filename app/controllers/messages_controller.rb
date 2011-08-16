@@ -60,7 +60,7 @@ class MessagesController < ApplicationController
       # Code will go here to send SMS back to sender
       require 'twilio-ruby'
       Message.send_over_use_message(params[:From])
-      redirect_to messages_path
+      redirect_to root_path
     end
   end
 
