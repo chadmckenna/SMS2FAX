@@ -29,7 +29,7 @@ a {
 }
   .header .header-container {
     margin: 0 auto 0 auto;
-    width: 50%;
+    width: 65%;
   }
   .header .nav {
     float: right;
@@ -37,6 +37,7 @@ a {
     padding: .5em 0;
   }
     .header .nav a {
+      color: #fff;
 	  padding: .5em;
 	  text-shadow: 0 1px 0 #666;
     }
@@ -62,7 +63,7 @@ a {
 	z-index: -1;
 	position: relative;
 	margin: 100px auto 0 auto;
-	width: 50%;
+	width: 60%;
 }
   h1, h2, h3, h4, h5, h6 {
 	font-weight: 300;
