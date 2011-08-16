@@ -60,10 +60,12 @@ class Message < ActiveRecord::Base
 	end
 
 	def self.send_message(message, to) 
+		require 'twilio-ruby'
+
 		@account_sid	= ENV['TWILIO_ACCOUNT_SID'].to_s
 		@auth_token		= ENV['TWILIO_AUTH_TOKEN'].to_s
 
-		@client = Twilio::Rest::Client.new(@account_sid, @auth_token)
+		@client = Twilio::REST::Client.new(@account_sid, @auth_token)
 
 		@account = @client.account
 		@message = @account.sms.messages.create({:from => '+14155992671', :to => to, :body => message})
