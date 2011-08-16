@@ -60,10 +60,7 @@ class MessagesController < ApplicationController
       # Code will go here to send SMS back to sender
       require 'twilio-ruby'
       Message.send_over_use_message(params[:From])
-      respond_to do |format|
-        format.html { redirect_to(@message, :notice => 'You have used all of your faxes. Sorry.') }
-        format.xml  { render :xml => @message, :status => :unprocessable_entity, :location => @message }
-      end
+      redirect_to messages_path
     end
   end
 
