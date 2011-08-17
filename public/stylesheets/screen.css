@@ -27,13 +27,17 @@ a {
 	border-bottom: solid 5px #C9D7E6;
 	box-shadow: 0 0 4px 0px #000;
 }
+  .header .header-container {
+    margin: 0 auto 0 auto;
+    width: 65%;
+  }
   .header .nav {
     float: right;
     font-size: 1em;
     padding: .5em 0;
-    margin: 0 20px 0 0;
   }
     .header .nav a {
+      color: #fff;
 	  padding: .5em;
 	  text-shadow: 0 1px 0 #666;
     }
@@ -43,7 +47,6 @@ a {
     }
   .header a#logo {
 	font-weight: 900;
-	margin: 0 0 0 20px;
     font-size: 2em;
     float: left;
     text-decoration: none;
@@ -60,7 +63,7 @@ a {
 	z-index: -1;
 	position: relative;
 	margin: 100px auto 0 auto;
-	width: 50%;
+	width: 60%;
 }
   h1, h2, h3, h4, h5, h6 {
 	font-weight: 300;

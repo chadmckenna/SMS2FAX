@@ -2,6 +2,9 @@ source :gemcutter
 gem "rails", "~> 2.3.12"
 gem "sqlite3-ruby", :require => "sqlite3"
 gem "pamfaxr"
+gem "haml"
+gem "sass"
+gem "twilio-ruby"
 
 # bundler requires these gems in all environments
 # gem "nokogiri", "1.4.2"
