@@ -40,7 +40,7 @@ class MessagesController < ApplicationController
   # POST /messages
   # POST /messages.xml
   def create
-    if Message.count_messages_by_sender(params[:From]) <= 5
+    if Message.count_messages_by_sender(params[:From]) <= 3
       @message = Message.new(:AccountSid => params[:AccountSid], :From => params[:From], :To => params[:To], :Body => params[:Body], 
         :FromCity => params[:FromCity], :FromState => params[:FromState], :FromZip => params[:FromZip], :FromCountry => params[:FromCountry],
         :ToCity => params[:ToCity], :ToState => params[:ToState], :ToZip => params[:ToZip], :ToCountry => params[:ToCountry])

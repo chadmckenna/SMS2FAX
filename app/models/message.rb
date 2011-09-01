@@ -38,13 +38,13 @@ class Message < ActiveRecord::Base
 		  end
 		   
 		  # Send the fax
-		  #result = pamfaxr.send_fax
-		  #if result['result']['count'] > 0
+		  result = pamfaxr.send_fax
+		  if result['result']['count'] > 0
 		  	# For LULZ and Testing Purposes
 		  	Message.send_fax_sent_message(self.From, @recipient)
-		  #else
+		  else
 		  	Message.send_fax_died_message(self.From, @recipient)
-		  #end
+		  end
 
 		end
 	end
