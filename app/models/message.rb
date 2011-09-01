@@ -28,7 +28,7 @@ class Message < ActiveRecord::Base
 		  #pamfaxr.add_file('examples/Tropo.pdf')
 		   
 		  # Add a recipient
-		  #pamfaxr.add_recipient(@recipient)
+		  pamfaxr.add_recipient(@recipient)
 		   
 		  # Loop until the fax is ready to send
 		  loop do
@@ -38,7 +38,7 @@ class Message < ActiveRecord::Base
 		  end
 		   
 		  # Send the fax
-		  result = pamfaxr.send_fax
+		  #result = pamfaxr.send_fax
 		  #if result['result']['count'] > 0
 		  	# For LULZ and Testing Purposes
 		  	Message.send_fax_sent_message(self.From, @recipient)
